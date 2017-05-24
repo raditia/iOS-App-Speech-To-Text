@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,48 +19,47 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What can I help you with?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pc6-hW-Wiz">
-                                <rect key="frame" x="68" y="57" width="184" height="67.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVi-bQ-yqt">
-                                <rect key="frame" x="110.5" y="390" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="hPb-q7-czA"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="wgX-R2-jj9"/>
-                                    <constraint firstAttribute="height" constant="100" id="xOU-Eo-8ex"/>
-                                </constraints>
-                                <state key="normal" image="Record"/>
-                                <connections>
-                                    <action selector="micPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B66-MW-3h9"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdP-5g-Nsx">
-                                <rect key="frame" x="16" y="143" width="288" height="96"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" lookupSuggestion="YES"/>
-                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5st-fZ-xeG">
+                                <rect key="frame" x="16" y="28" width="343" height="631"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="j1E-Yv-1F1">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="315.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What can I help you with?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pc6-hW-Wiz">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="158"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="This is where the text goes" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdP-5g-Nsx">
+                                                <rect key="frame" x="0.0" y="158" width="343" height="157.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" lookupSuggestion="YES"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVi-bQ-yqt">
+                                        <rect key="frame" x="0.0" y="315.5" width="343" height="315.5"/>
+                                        <state key="normal" image="Record"/>
+                                        <connections>
+                                            <action selector="micPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B66-MW-3h9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="sdP-5g-Nsx" firstAttribute="top" secondItem="Pc6-hW-Wiz" secondAttribute="bottom" constant="18.5" id="3Ub-fO-gJI"/>
-                            <constraint firstItem="Pc6-hW-Wiz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FsL-D5-eoB"/>
-                            <constraint firstItem="hVi-bQ-yqt" firstAttribute="centerX" secondItem="sdP-5g-Nsx" secondAttribute="centerX" id="QQM-l3-nBC"/>
-                            <constraint firstItem="hVi-bQ-yqt" firstAttribute="centerX" secondItem="Pc6-hW-Wiz" secondAttribute="centerX" id="QTt-fJ-1I8"/>
-                            <constraint firstItem="hVi-bQ-yqt" firstAttribute="top" secondItem="sdP-5g-Nsx" secondAttribute="bottom" constant="151" id="b6p-wZ-ivo"/>
-                            <constraint firstAttribute="trailing" secondItem="Pc6-hW-Wiz" secondAttribute="trailing" constant="68" id="doS-ff-ehu"/>
-                            <constraint firstItem="Pc6-hW-Wiz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="52" id="qVi-zo-UfL"/>
-                            <constraint firstItem="sdP-5g-Nsx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="t5y-e5-MIa"/>
-                            <constraint firstItem="Pc6-hW-Wiz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="37" id="wCL-mm-DuM"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hVi-bQ-yqt" secondAttribute="bottom" constant="78" id="zB6-Mj-Wc5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5st-fZ-xeG" secondAttribute="bottom" constant="8" symbolic="YES" id="MRW-TE-TXQ"/>
+                            <constraint firstItem="5st-fZ-xeG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Mpa-0h-dzS"/>
+                            <constraint firstItem="5st-fZ-xeG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="q9f-yd-bAX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5st-fZ-xeG" secondAttribute="trailing" id="rhC-82-y1r"/>
                         </constraints>
                     </view>
                     <connections>
